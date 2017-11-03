@@ -1,0 +1,37 @@
+<!DOCTYPTE html>
+<html>
+
+<head>
+
+ <%= javascript_include_tag 'firstcontact' %>
+
+</head>
+
+<body>
+
+<h1>hello ruby on rails's world</h1>
+<h2>a link</h2>
+<a href = "http://www.ucas.ac.cn">U.C.A.S.</a>
+<h2>your time</h2>
+<p class = "time_displayer">
+<script>
+function clock(){
+    setInterval(displayLocalTime,1000);
+
+    function displayLocalTime(){
+        $(".time_displayer").html(getLocalTime());
+    }
+}
+$(document).ready(clock());
+
+
+</script></p>
+
+
+<%= link_to "exploere more of this world ", @goodbye%>
+
+
+
+</body>
+
+</html>
