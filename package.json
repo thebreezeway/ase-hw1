@@ -2,7 +2,8 @@
   "name": "rubyblog",
   "private": true,
   "dependencies": {
-    "rails-ujs": "5.1.4",
-    "jquery-ujs": "1.2.2"
+    "jquery": "^3.2.1",
+    "jquery-ujs": "1.2.2",
+    "rails-ujs": "5.1.4"
   }
 }
