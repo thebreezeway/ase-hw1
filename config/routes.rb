@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+
+  resources :articles
+
   get 'firstcontact/hello'
 
   get 'firstcontact/goodbye'
