@@ -9,31 +9,40 @@
 </head>
 
 <body>
+<div class = "nav nav-tabs">
+</div>
+<div class = "container">
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><%= link_to "首页", action: "hello" , controller: "firstcontact" %></li>
+  <li role="presentation"><%=link_to "所有文章", articles_url %></li>
+  <li role="presentation"><a href="#">尾页</a></li>
+</ul>
 
-<h1>hello ruby on rails's world</h1>
-<h2>a link</h2>
-<a href = "http://www.ucas.ac.cn">U.C.A.S.</a>
-<h2>your time</h2>
-<p class = "time_displayer">
-<script>
-function clock(){
-    setInterval(displayLocalTime,1000);
+<div class="jumbotron">
+ <h1>Hello!ruby on rails's world</h1>
+  
+  <p>一个链接：<a href="http://www.ucas.ac.cn">U.C.A.S</a>
+        <p class = "time_displayer">
+        <script>
+        function clock(){
+            setInterval(displayLocalTime,1000);
 
-    function displayLocalTime(){
-        $(".time_displayer").html(getLocalTime());
-    }
-}
-$(document).ready(clock());
-
-
-</script></p>
+            function displayLocalTime(){
+                $(".time_displayer").html(getLocalTime());
+            }
+        }
+        $(document).ready(clock());
 
 
-<%= link_to "exploere more of this world ", @goodbye %>
+        </script></p>
+</p>
+  <p><%= link_to "exploere more of this world ", @goodbye, class:"btn btn-primary btn-lg" %></p>
+</div>
 
-<%= link_to "show articles", articles_url %>
 
 
+
+</div>
 </body>
 
 </html>
