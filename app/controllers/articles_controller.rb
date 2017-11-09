@@ -3,7 +3,6 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
     @new_article_path = "/articles/new"
-    
   end
 
   def new
@@ -14,14 +13,9 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
    
- 
-   
- 
-
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-   
     redirect_to articles_path
   end
   
@@ -32,9 +26,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-  def delete
-  
-  end
   
  
 

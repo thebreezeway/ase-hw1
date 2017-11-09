@@ -9,14 +9,9 @@
 </head>
 
 <body>
-<div class = "nav nav-tabs">
-</div>
+
 <div class = "container">
-<ul class="nav nav-tabs">
-  <li role="presentation" class="active"><%= link_to "首页", action: "hello" , controller: "firstcontact" %></li>
-  <li role="presentation"><%=link_to "所有文章", articles_url %></li>
-  <li role="presentation"><a href="#">尾页</a></li>
-</ul>
+<%= render "layouts/header"%>
 
 <div class="jumbotron">
  <h1>Hello!ruby on rails's world</h1>
